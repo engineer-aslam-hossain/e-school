@@ -15,52 +15,317 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- nav-bar section -->
     <header>
-      <nav class="navbar navbar-expand-lg p-4">
-        <a class="navbar-brand text-white" href="#"><h1 class="icon">A</h1></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Work</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <button class="btn btn-success">Sign in</button>
-          </ul>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+          <a class="navbar-brand icon" href="#"
+            ><img src="images/ICON/Logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-column align-items-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Books <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Others</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item active">
+                <button class="btn btn-success sign-in">
+                  Sign in
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- advertisement area -->
+        <div class="advertisement">
+          <div class="row d-flex align-items-end">
+            <div class="col-md-5">
+              <span class="red-text">Are you ready to Learn ?</span>
+              <h1>
+                Learn with fun on <span class="highlighter">any schedule</span>
+              </h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                error aperiam quo obcaecati, cupiditate vel!
+              </p>
+              <button class="btn btn-success get-started">Get Started</button>
+            </div>
+            <div class="col-md-7 online-class">
+              <img src="images/Photos/Illustration.png" alt="" />
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
+    <!-- site summery -->
+    <section>
+      <div class="container">
+        <div class="row site-summery">
+          <div class="col-sm-3 summery-items">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <img src="images/ICON/book.png" alt="" />
+              <h5>1500+ Topic</h5>
+              <span>Learn Anythings</span>
+            </div>
+          </div>
+          <div class="col-sm-3 summery-items">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <img src="images/ICON/Student.png" alt="" />
+              <h5>1800+ Students</h5>
+              <span>Learn Anythings</span>
+            </div>
+          </div>
+          <div class="col-sm-3 summery-items">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <img src="images/ICON/Test.png" alt="" />
+              <h5>9K+ Test Token</h5>
+              <span>Learn Anythings</span>
+            </div>
+          </div>
+          <div class="col-sm-3 summery-items">
+            <div
+              class="d-flex justify-content-center align-items-center flex-column"
+            >
+              <img src="images/ICON/Students.png" alt="" />
+              <h5>2000+ Student</h5>
+              <span>Learn Anythings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Online course card section -->
+    <section class="online-course-card">
+      <div class="container">
+        <h1 class="course-heading text-center">Online Course</h1>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-area">
+              <img
+                src="images/Photos/Morder pyschology.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title">Modern Psychology</h3>
+                <p class="designation">Designation</p>
+                <button class="btn btn-success buy-course">Buy Course</button>
+              </div>
+              <div class="card-footer d-flex flex-row justify-content-between">
+                <div class="card-footer-left">
+                  <img src="images/ICON/calendar.png" alt="" />
+                  <span>Starts 20 April,2021</span>
+                </div>
+                <div class="card-footer-right">
+                  <img src="images/ICON/people.png" alt="" />
+                  <span>60 seats</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-area">
+              <img
+                src="images/Photos/Morder psyc.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title">Modern Psychology</h3>
+                <p class="designation">Designation</p>
+                <button class="btn btn-success buy-course">Buy Course</button>
+              </div>
+              <div class="card-footer d-flex flex-row justify-content-between">
+                <div class="card-footer-left">
+                  <img src="images/ICON/calendar.png" alt="" />
+                  <span>Starts 20 April,2021</span>
+                </div>
+                <div class="card-footer-right">
+                  <img src="images/ICON/people.png" alt="" />
+                  <span>60 seats</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-area">
+              <img
+                src="images/Photos/Morder pychons.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title">Modern Psychology</h3>
+                <p class="designation">Designation</p>
+                <button class="btn btn-success buy-course">Buy Course</button>
+              </div>
+              <div class="card-footer d-flex flex-row justify-content-between">
+                <div class="card-footer-left">
+                  <img src="images/ICON/calendar.png" alt="" />
+                  <span>Starts 20 April,2021</span>
+                </div>
+                <div class="card-footer-right">
+                  <img src="images/ICON/people.png" alt="" />
+                  <span>60 seats</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section -->
+    <section class="testimonial">
+      <div class="container">
+        <h1 class="testimonial-heading text-center">Testimonial</h1>
+        <div class="row d-flex align-items-center flex-row">
+          <div class="col-md-4 person d-flex justify-content-end">
+            <img src="images/Photos/Man.png" class="rounded-circle" alt="" />
+          </div>
+          <div class="col-md-8">
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contributor section -->
+    <section class="contributor">
+      <div class="row">
+        <div class="col-md-6 sponsor">
+          <div class="sponsor-img">
+            <img src="images/ICON/contributor.jpg" alt="" />
+          </div>
+          <div class="sponsor-details">
+            <h1>Become a Sponsor</h1>
+            <p>
+              You want to be a contributor ? you have that patient to help other
+              ? you have much money on your pocket ? then join E-School as a
+              Sponsor
+            </p>
+            <button class="btn btn-success find-more">FIND MORE</button>
+          </div>
+        </div>
+        <div class="col-md-6 teacher">
+          <div class="teacher-img">
+            <img src="images/ICON/teacher1.jpg" alt="" />
+          </div>
+          <div class="teacher-details">
+            <h1>Become a course Teacher</h1>
+            <p>
+              Do you think you can write good tutorial contents for
+              students?then join E School.
+            </p>
+            <button class="btn btn-success explore">EXPLORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Learn From any where  section -->
+    <section class="learn-from-anywhere">
+      <div class="container">
+        <div
+          class="col-md-12 d-flex justify-content-center align-items-center find-us text-center"
+        >
+          <div>
+            <a href="#"> <img src="images/Photos/appstore.png" alt="" /></a>
+            <a href="#"> <img src="images/Photos/googleplay.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="row">
+        <div class="col-md-4 footer-left d-flex justify-content-end">
+          <p>
+            Millions of people of all ages and from around the world are
+            improving their lives with us
+          </p>
+        </div>
+        <div
+          class="col-md-8 d-flex flex-row justify-content-around align-items-center footer-right"
+        >
+          <div class="course">
+            <h5>Course</h5>
+            <ul>
+              <li><a href="">Graphics Design</a></li>
+              <li><a href="">Web Design</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">Marketing</a></li>
+              <li><a href="">Engineering</a></li>
+            </ul>
+          </div>
+          <div class="terms">
+            <h5>Terms</h5>
+            <ul>
+              <li><a href="">Graphics Design</a></li>
+              <li><a href="">Web Design</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">Marketing</a></li>
+              <li><a href="">Engineering</a></li>
+            </ul>
+          </div>
+          <div class="useful-link">
+            <h5>Useful Link</h5>
+            <ul>
+              <li><a href="">Graphics Design</a></li>
+              <li><a href="">Web Design</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">Marketing</a></li>
+              <li><a href="">Engineering</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center">
+        <p>Copyright &copy 2020 E-School.com</p>
+      </div>
+    </footer>
     <!-- bootstrap js file -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
